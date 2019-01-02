@@ -25,7 +25,7 @@ SECRET_KEY = '$$o(ia!=+d5829@jgw8e23wbir3utz+r2k&r&em+b7h9hiixk^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
