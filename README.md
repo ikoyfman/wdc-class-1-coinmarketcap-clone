@@ -1,3 +1,5 @@
+<img align="right" width="120" alt="rmotr.com" src="https://user-images.githubusercontent.com/7065401/45454218-80bee800-b6b9-11e8-97bb-bb5e7675f440.png">
+
 # Coinmarketcap clone
 
 Today, we want to build a copy of [https://coinmarketcap.com/](https://coinmarketcap.com/) 💪
@@ -9,16 +11,16 @@ This project is part of RMOTR's [Web Development Career](https://rmotr.com/web-d
 If we do it right, the final result should look something like this:
 ![image](https://user-images.githubusercontent.com/1155573/38173232-207f77b0-3591-11e8-9e95-cd14da306186.png)
 
-So, let's get started! 🎉 
+So, let's get started! 🎉
 
 ## 1) Setting up the environment
 
 Before we get started with Django, we need to make sure our local Python environment is properly set up. For that, we will use `virtualenv` and the awesome `virtualenvwrapper` tool.
 
-*note: this app has been developed using Python 3*
+*note: this app has been developed using Python 3.5*
 
 ```bash
-$ mkvirtualenv -p $(which python3)
+$ mkvirtualenv -p $(which python3.5)
 $ pip install -r requirements/base.txt
 ```
 
@@ -33,9 +35,6 @@ $ django-admin startproject coinmarketcap
 
 $ cd coinmarketcap/
 $ django-admin startapp cryptocoins
-
-$ export DJANGO_SETTINGS_MODULE=coinmarketcap.settings
-$ export PYTHONPATH=$(readlink -f coinmarketcap)
 ```
 
 ## 3) Run the app for the first time
@@ -46,7 +45,7 @@ If we did everything right, we should be able to run our Django app now. It will
 $ make runserver
 ```
 
-Once the Django server is running, visit [http://localhost:8080/](http://localhost:8080/) in your browser. If you see the following page, that means your Django project is fully up and running. 💪 🎉 🙌 
+Once the Django server is running, visit [http://localhost:8080/](http://localhost:8080/) in your browser. If you see the following page, that means your Django project is fully up and running. 💪 🎉 🙌
 
 ![image](https://user-images.githubusercontent.com/1155573/38176781-7765511e-35cb-11e8-9950-81b87a641111.png)
 
@@ -110,4 +109,3 @@ Of course, you will also need to define a custom view (provable a TemplateView i
 ## Final notes
 
 That's all! 🎉 We have a fully functional Django App just by completing these few steps.  Of course, this is probably using just a 10% of all Django features. But, don't worry. We will have plenty of time to cover the rest in our [Web Development with Django](https://rmotr.com/web-development-django-python-course) career 😁.
-
